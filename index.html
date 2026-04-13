@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="utf-8">
+    <title>Maison Food</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<script>
+    let slider = document.querySelectorAll(".slider img");
+    let index =0;
+    setInterval(() =>{
+        slides[index].classlist.remove("active");
+        index =(index+1 )% slides.length; 
+    },3000);
+</script>
+<body>
+    <header>
+        <h1>Maison Food</h1>
+        <nav>
+            <a href="index.html">الرئيسية</a>
+            <a href="products.html">المنتجات
+                <a href="contact.html">تواصل</a>
+            </a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h1>افضل المنتجات الطازجة يوميا</h1>
+        <p>تسوق بسهولة وبأفضل الأسعار</p>
+        <a href="products.html" class="btn">تسوق الان</a>
+    </section>
+    <footer>
+        <p>Maison Food 2026</p>
+    </footer>
+    <section class="banner">
+        <h2> عروض اليوم</h2>
+        <p>خصومات تصل الى 50%</p>
+    </section>
+</body>
+</html>
